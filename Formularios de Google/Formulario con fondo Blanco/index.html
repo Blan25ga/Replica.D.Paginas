@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login ejemplo de google</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+   <!--se crea la clase para creear el formulario, ya que es esta compuesto en un solo contenedor-->
+   <div class="container">
+      <h3>Completa el formulario</h3>
+      <div class="buttons">
+         <!--se crea el boton en donde va la accion de google + el logo (en eticketa "picture")-->
+         <button class="google-btn">
+            <picture>
+               <img src="http://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png" alt="logo.google">
+            </picture>
+
+            <!--el span lleva a cabo el nombre que va en el boton y llama a la accion-->
+            <span>Registrate con Google</span>
+         </button>
+
+         <!--boton de twiter + imagen (en picture)-->
+         <button class=" twiter-btn">
+            <picture>
+               <img
+                  src="http://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png"
+                  alt="Twitter">
+            </picture>
+         </button>
+      </div>
+      <!--Aca se crea linea separadora (separator), con en nombre "Or..", la cual se meodifica en una continua con css-->
+      <div class="separator">
+         <hr>
+         <span>Or..</span>
+         <hr>
+      </div>
+      <!--creacion de formulario junto con dos input, name y username-->
+      <form action="" method="">
+         <!--la etiqueta "form"; siempre lleva un "action" y un "method"-->
+         <div class="section-inputs">
+            <!--el for hace referencia al id del input, se crea una barra de llenado en conjuncion con el input-->
+            <label for="name">
+               <!--nombre del input va en el span-->
+               <span>Name</span>
+               <input id="name" name="name">
+            </label>
+            <!--se realiza lo mismo para el otro input que va a llevar el nombre de "username"-->
+            <label for="username">
+               <span>Username</span>
+               <input id="username" name="username">
+            </label>
+         </div>
+
+         <!--lo mismo para el e-mail y para el pasword-->
+         <label for="email">
+            <span>Email</span>
+            <input id="email" name="email">
+         </label>
+         <label for="password">
+            <span>Password</span>
+
+            <!-- el "placeholder" hace que se vea la indicacion dentro del recuadro-->
+            <input id="password" name="password" placeholder="6+ caracteres" type="password">
+         </label>
+         <!--se crea un recuadro de check-->
+         <label for="checkbox" class="checkbox-label">
+            <input type="checkbox" id="checkbox">
+            <span>Acepto las bases y condiciones</span>
+         </label>
+         <!--boton de crear cuenta-->
+         <button type="submit" class="submit-btn">Crear Cuenta</button>
+
+      </form>
+   </div>
+</body>
+
+</html>
