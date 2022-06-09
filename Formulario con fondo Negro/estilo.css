@@ -1,0 +1,200 @@
+/*importacion de formato de letra desde fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/*fondo negro y renderizacion de letras blancas a todo el proyecto*/
+html {
+  background-color: #161717;
+  color: white;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+/* se trabaja sobre la clase container para que quede en columna*/
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*gap: espacio entre lineas*/
+  gap: 30px;
+  width: 400px;
+}
+
+.buttons {
+  align-self: flex-start;
+  display: flex;
+  gap: 30px;
+}
+/*forma y color al boton de registro google*/
+.google-btn {
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+/*con el hover creamos la opacidad cuando pasamos por encima del boton*/
+.google-btn:hover {
+  opacity: 0.6;
+}
+
+/*creacion del picture en donde ira la imagen de Google*/
+.google-btn picture {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 2px;
+  /* items para alineacion de logo google (picture img)*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*cambio de tamaño del logo de google para poner en el boton azul*/
+.google-btn picture img {
+  width: 75%;
+}
+/*acceder al span, (registrate con google)*/
+.google-btn span {
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+}
+
+/*rendericacion de boton twiter*/
+.twiter-btn {
+  color: rgb(238, 238, 238);
+  background-color: rgb(238, 238, 238);
+  border: none;
+  width: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.twiter-btn picture {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  /* items para alineacion de logo google (picture img)*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*tamaño de imagen*/
+.twiter-btn picture img {
+  width: 30px;
+}
+
+/*le ponemos un hover para el cambio de color al pasar con el cursor por encima*/
+.twiter-btn:hover {
+  opacity: 0.6;
+}
+
+/*edicion de los separadores; con un gap para separar el (or..)*/
+.separator {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+/*para que el separador acupe todo el ancho*/
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.separator span {
+  color: #8b8b8b;
+}
+
+/*edicion de los inputs*/
+.section-inputs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label span {
+  font-weight: 700;
+}
+.section-inputs label input {
+  width: 80%;
+  background-color: #212121;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 11px;
+  outline: none;
+  font-size: 12pt;
+}
+
+label input {
+  width: 90%;
+  background-color: #212121;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 12pt;
+  transition: background-color 0.2s, border 0.2s;
+}
+/*edicion de barra para q se le forme un anillo*/
+label input:hover {
+  background-color: #454045;
+  border: solid 1px #f3f3f4;
+  box-shadow: 0 0 4px rgba(231, 28, 170, 0.945);
+}
+
+label input:focus {
+  background-color: white;
+  border: solid 1px #f3f3f4;
+  box-shadow: 0 0 4px rgba(231, 28, 170, 0.945);
+}
+
+/*edicion del chck*/
+.checkbox-label {
+  display: flex;
+  /*la direccion "row", hace que el texto se coloque junto al check.*/
+  flex-direction: row;
+}
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+}
+.checkbox-label span {
+  font-weight: 400;
+}
+
+/*boton de crear cuenta*/
+.submit-btn {
+  background-color: rgba(216, 57, 123, 0.733);
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: center;
+  padding: 10px;
+  border: 0.5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.75;
+}
